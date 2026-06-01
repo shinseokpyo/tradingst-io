@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Trading Strategy Lab — AI가 발굴하는 트레이딩 전략</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--card:#111118;--border:#1a1a24;--text:#e4e4ed;--muted:#686b82;--green:#22c55e;--purple:#7c3aed}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.container{max-width:900px;margin:0 auto;padding:32px 16px}
+.hero{text-align:center;padding:48px 16px 40px;margin-bottom:32px}
+.hero h1{font-size:32px;font-weight:800;letter-spacing:-0.5px;margin-bottom:8px}
+.gradient{background:linear-gradient(135deg,#7c3aed,#22c55e);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:15px;color:var(--muted);max-width:550px;margin:0 auto 16px}
+.hero-tag{display:inline-block;background:rgba(124,58,237,0.1);border:1px solid rgba(124,58,237,0.3);color:#a78bfa;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:36px}
+.stat-box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:center}
+.val{font-size:30px;font-weight:800}.lbl{font-size:10px;color:var(--muted);text-transform:uppercase;margin-top:4px}
+.how{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:32px;font-size:13px;color:var(--muted);line-height:1.9}
+.how b{color:var(--text)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:8px}
+.card-head{display:flex;justify-content:space-between;margin-bottom:10px}.card-name{font-size:13px;font-weight:600}.card-verdict{font-size:10px;font-weight:800}
+.card-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.card-stats .v{font-size:18px;font-weight:700;display:block}.card-stats .l{font-size:9px;color:var(--muted)}
+.footer{text-align:center;font-size:10px;color:var(--muted);padding:24px 0;border-top:1px solid var(--border);margin-top:36px}
+</style></head><body><div class="container">
+<div class="hero">
+<h1>🤖 <span class="gradient">Trading Strategy Lab</span></h1>
+<p>4개의 AI 에이전트가 24시간 동안 전 세계 금융 데이터를 분석해<br>검증된 트레이딩 전략만 골라냅니다</p>
+<span class="hero-tag">DeepSeek v4 Pro · Binance 실데이터 · 4시간마다 갱신</span>
+</div>
+
+<div class="stats-row">
+<div class="stat-box"><div class="val">2</div><div class="lbl">전략 테스트 완료</div></div>
+<div class="stat-box"><div class="val" style="color:var(--green)">0</div><div class="lbl">통과</div></div>
+<div class="stat-box"><div class="val" style="color:var(--purple)">1</div><div class="lbl">데이터 축적 중</div></div>
+</div>
+
+<div class="how">
+<b>⚙️ 작동 방식</b><br>
+<span style="color:var(--purple)">① Research Agent</span> — GitHub, YouTube, arXiv에서 트레이딩 전략 발굴<br>
+<span style="color:var(--purple)">② Developer Agent</span> — 전략을 수치화된 스펙으로 변환<br>
+<span style="color:var(--purple)">③ Backtesting Agent</span> — Binance 실제 과거 데이터로 엄격한 검증<br>
+<span style="color:var(--purple)">④ CIO Agent</span> — Profit Factor, MDD, 승률 분석 후 최종 승인
+</div>
+
+<h2 style="font-size:16px;margin-bottom:12px">📊 백테스트 결과</h2>
+<div class="card">
+<div class="card-head"><span class="card-name">RSI-Stochastic-EMA Triple Confirmation Scalping</span><span class="card-verdict" style="color:#f59e0b">INSUFFICIENT_DATA</span></div>
+<div class="card-stats"><div><span class="v">3</span><span class="l">Trades</span></div><div><span class="v">33%</span><span class="l">WR</span></div><div><span class="v">0.77</span><span class="l">PF</span></div><div><span class="v">3.2%</span><span class="l">MDD</span></div></div></div><div class="card">
+<div class="card-head"><span class="card-name">RSI Divergence Scalping</span><span class="card-verdict" style="color:#ef4444">FAIL</span></div>
+<div class="card-stats"><div><span class="v">2</span><span class="l">Trades</span></div><div><span class="v">100%</span><span class="l">WR</span></div><div><span class="v">3840.00</span><span class="l">PF</span></div><div><span class="v">0.0%</span><span class="l">MDD</span></div></div></div>
+
+<footer class="footer">
+Trading Strategy Lab · 2026-06-01 22:05 · Hermes Agent + DeepSeek<br>모든 전략은 과거 데이터 기반이며 미래 수익을 보장하지 않습니다
+</footer>
+</div></body></html>
